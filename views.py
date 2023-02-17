@@ -14,6 +14,10 @@ def home():
 def login():
     return render_template("login.html")
 
-@views.route("/test")
-def test():
+@views.route("/register")
+def register():
     return render_template("register.html")
+
+@views.route("/forgot-password")
+def forgot():
+    return render_template("forgotpassword.html")
